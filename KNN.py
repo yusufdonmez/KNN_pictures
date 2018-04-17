@@ -25,7 +25,7 @@ class NearestNeighbor(object):
     """ X is N x D where each row is an example we wish to predict label for """
     
     #Buradan ise test veri sayısını belirliyoruz...
-    test_veri_sayisi=9990
+    test_veri_sayisi=9900
     num_test = X.shape[0]
     print("Test veri sayısı:", num_test-test_veri_sayisi)
     # lets make sure that the output type matches the input type
@@ -60,7 +60,7 @@ Yte_predict = nn.predict(Xte_rows) # predict labels on the test images
 # of examples that are correctly predicted (i.e. label matches)
 
 print("Test edilmiş veri(fofoğraf) örnekleri:")
-visualize_CIFAR(Xte,Yte,10)
+visualize_CIFAR(Xte,Yte_predict,10)
 
 print('Uygulama testi bitti, Sonuç, Doğruluk:%f' % ( np.mean(Yte_predict == Yte)*100 ),)
 #print('accuracy: %f' % ( np.mean(Yte_predict == Yte) ))
