@@ -1,5 +1,5 @@
 # Siniflandirma
-python üzerinde deep learning algoritması ile resim sınıflandırma
+python üzerinde KNN algoritması ile resim sınıflandırma
 
 
 ## calistirma
